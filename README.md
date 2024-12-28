@@ -16,7 +16,7 @@
         <h2>🌟 Features</h2>
         <ul>
             <li>🔍 <b>Multi-modal support</b> for MRI and CT scans.</li>
-            <li>🧪 <b>98.5% Test Accuracy</b>, ensuring robustness and reliability.</li>
+            <li>🧪 <b>99.2% Test Accuracy</b>, ensuring robustness and reliability.</li>
             <li>🛠️ <b>Preprocessing pipeline:</b> resizing, grayscale conversion, and contrast adjustments.</li>
             <li>🧠 Built on <b>ResNet18</b>, fine-tuned for binary classification.</li>
         </ul>
@@ -52,8 +52,8 @@ jupyter notebook Brain_Tumor_Detection.ipynb
         </ul>
         <h2>📊 Results</h2>
         <ul>
-            <li><b>Validation Accuracy:</b> 99% ✅</li>
-            <li><b>Test Accuracy:</b> 98.5% ✅</li>
+            <li><b>Validation Accuracy:</b> 99.1% ✅</li>
+            <li><b>Test Accuracy:</b> 99.2% ✅</li>
         </ul>
         <p>These metrics showcase the model's exceptional generalization and performance on unseen data.</p>
         <h2>📈 Visualizations</h2>
