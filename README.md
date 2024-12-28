@@ -10,7 +10,7 @@
         <h1>🧠 Brain Tumor Detection using ResNet 🩺</h1>
         <p>
             This project utilizes cutting-edge AI to analyze MRI and CT scan images, distinguishing between 
-            <b>Healthy</b> and <b>Tumor</b> categories. With an incredible <b>98.5% accuracy</b> on test data, 
+            <b>Healthy</b> and <b>Tumor</b> categories. With an incredible <b>99.2% accuracy</b> on test data, 
             this model sets a new benchmark for brain tumor detection. 🚀
         </p>
         <h2>🌟 Features</h2>
