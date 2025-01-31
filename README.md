@@ -3,74 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
-    <div class="container">
-        <h1>🧠 Brain Tumor Detection using ResNet 🩺</h1>
-        <p>
-            This project utilizes cutting-edge AI to analyze MRI and CT scan images, distinguishing between 
-            <b>Healthy</b> and <b>Tumor</b> categories. With an incredible <b>99.2% accuracy</b> on test data, 
-            this model sets a new benchmark for brain tumor detection. 🚀
-        </p>
-        <h2>🌟 Features</h2>
-        <ul>
-            <li>🔍 <b>Multi-modal support</b> for MRI and CT scans.</li>
-            <li>🧪 <b>99.2% Test Accuracy</b>, ensuring robustness and reliability.</li>
-            <li>🛠️ <b>Preprocessing pipeline:</b> resizing, grayscale conversion, and contrast adjustments.</li>
-            <li>🧠 Built on <b>ResNet18</b>, fine-tuned for binary classification.</li>
-        </ul>
-        <h2>📂 Dataset</h2>
-        <p>The dataset includes categorized MRI and CT scans:</p>
-        <ul>
-            <li><b>Tumor:</b> 🟠 Scans with brain tumors.</li>
-            <li><b>Healthy:</b> 🟢 Scans without any abnormalities.</li>
-        </ul>
-        <p>📥 Download the dataset from <a href="https://www.kaggle.com/datasets/murtozalikhon/brain-tumor-multimodal-image-ct-and-mri">Kaggle</a>.</p>
-        <h2>🚀 Quick Start Guide</h2>
-        <h3>Clone the Repository</h3>
-        <pre>
-git clone https://github.com/your_username/brain-tumor-detection.git
-cd brain-tumor-detection
-        </pre>
-        <h3>Download and Place the Dataset</h3>
-        <p>Extract the dataset into a folder named <code>Dataset</code>.</p>
-        <h3>Install Dependencies</h3>
-        <pre>
-pip install -r requirements.txt
-        </pre>
-        <h3>Run the Notebook</h3>
-        <pre>
-jupyter notebook Brain_Tumor_Detection.ipynb
-        </pre>
-        <p>Follow the steps in the notebook to train and evaluate the model.</p>
-        <h2>🏗️ Model Architecture</h2>
-        <p>Built on <b>ResNet18</b>, the model:</p>
-        <ul>
-            <li>Adapts for grayscale image input.</li>
-            <li>Outputs probabilities for two classes: <b>Tumor</b> 🟠 and <b>Healthy</b> 🟢.</li>
-        </ul>
-        <h2>📊 Results</h2>
-        <ul>
-            <li><b>Validation Accuracy:</b> 99.1% ✅</li>
-            <li><b>Test Accuracy:</b> 99.2% ✅</li>
-        </ul>
-        <p>These metrics showcase the model's exceptional generalization and performance on unseen data.</p>
-        <h2>📈 Visualizations</h2>
-        <p>The notebook provides:</p>
-        <ul>
-            <li>📉 <b>Training/Validation Loss and Accuracy Graphs</b></li>
-            <li>🔢 <b>Confusion Matrix</b> for test results.</li>
-            <li>🎯 <b>Sample Predictions</b> (both correct and incorrect classifications).</li>
-        </ul>
-        <h2>🤝 Contributing</h2>
-        <p>We welcome contributions! To get started:</p>
-        <ol>
-            <li>Fork this repository 🍴</li>
-            <li>Create a new branch for your feature/bug fix 🌿</li>
-            <li>Submit a pull request 📥</li>
-        </ol>
-        <p><b>Together, we can make a difference in brain health! 💪</b></p>
+<div class="container">
+    <h1>🧠 Tumor Detection on CT & MRI using CNN</h1>
+    <p><strong>🚀 A deep learning-based approach for detecting brain tumors in CT and MRI scans using a Convolutional Neural Network (CNN).</strong></p>
+    <h2>📊 Dataset Information</h2>
+    <p>
+        The dataset used for this project is publicly available on <a href="https://www.kaggle.com/datasets/murtozalikhon/brain-tumor-multimodal-image-ct-and-mri" target="_blank">Kaggle</a>.
+        It contains high-quality CT and MRI scans labeled as <strong>Healthy</strong> or <strong>Tumor</strong>.
+    </p>
+    <ul>
+        <li>📂 <strong>Source:</strong> <a href="https://www.kaggle.com/datasets/murtozalikhon/brain-tumor-multimodal-image-ct-and-mri" target="_blank">Kaggle Brain Tumor Multimodal Dataset</a>.</li>
+        <li>🖼️ <strong>Image Types:</strong> CT scans & MRI scans.</li>
+        <li>🔖 <strong>Labels:</strong> Two categories - Healthy & Tumor.</li>
+        <li>📏 <strong>Data Split:</strong> 80% Training, 10% Validation, 10% Test.</li>
+    </ul>
+    <h2>🧠 CNN Architecture</h2>
+    <ul>
+        <li>🔹 <strong>Conv Blocks:</strong> 4 convolutional layers with increasing filters (64 → 128 → 256 → 512).</li>
+        <li>🌀 <strong>Batch Normalization:</strong> Applied after each convolution to improve training stability.</li>
+        <li>🔹 <strong>Activation Function:</strong> ReLU6 for better precision.</li>
+        <li>🛑 <strong>Dropout:</strong> Applied at each stage (20%-50%) to reduce overfitting.</li>
+        <li>📏 <strong>Pooling:</strong> Max-pooling layers after each convolutional block.</li>
+        <li>📊 <strong>Final Classifier:</strong> Fully connected layers with softmax for binary classification.</li>
+    </ul>
+    <h2>⚙️ Image Preprocessing</h2>
+    <ul>
+        <li>🎨 <strong>Grayscale Conversion:</strong> Ensuring uniformity across all images.</li>
+        <li>🔍 <strong>Contrast & Brightness Adjustment:</strong> Enhancing image features.</li>
+        <li>🌀 <strong>Gaussian Noise Injection:</strong> Simulating real-world noise.</li>
+        <li>🔄 <strong>Random Affine Transformations:</strong> Adding slight distortions to improve generalization.</li>
+    </ul>
+    <h2>📊 Results</h2>
+    <div class="result">
+        <p>✅ <strong>Final Model Accuracy:</strong> <span class="code">98.35%</span></p>
+        <p>🎯 <strong>Precision:</strong> <span class="code">98%</span></p>
+        <p>🔬 <strong>Recall:</strong> <span class="code">98%</span></p>
+        <p>📉 <strong>Validation Accuracy:</strong> <span class="code">98.26%</span></p>
+        <p>🧪 <strong>Train Accuracy:</strong> <span class="code">96.83%</span></p>
     </div>
+    <h2>📜 Confusion Matrix</h2>
+    <p>Evaluating the classification performance:</p>
+    <img src="Confusion Matrix.png" alt="Confusion Matrix" width="400">
+    <p>
+        Developed as part of a research-based deep learning project. Dataset credits to <a href="https://www.kaggle.com/datasets/murtozalikhon/brain-tumor-multimodal-image-ct-and-mri" target="_blank">Kaggle dataset by Murtozali Khon</a>.</p>
+    <p> Free to use and modify 🎉</p>
+</div>
 </body>
 </html>
