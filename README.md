@@ -37,11 +37,11 @@
     </ul>
     <h2>📊 Results</h2>
     <div class="result">
-        <p>✅ <strong>Final Model Accuracy:</strong> <span class="code">98.35%</span></p>
+        <p>✅ <strong>Final Model Accuracy:</strong> <span class="code">97.30%</span></p>
         <p>🎯 <strong>Precision:</strong> <span class="code">98%</span></p>
         <p>🔬 <strong>Recall:</strong> <span class="code">98%</span></p>
-        <p>📉 <strong>Validation Accuracy:</strong> <span class="code">98.26%</span></p>
-        <p>🧪 <strong>Train Accuracy:</strong> <span class="code">96.83%</span></p>
+        <p>📉 <strong>Validation Accuracy:</strong> <span class="code">97.66%</span></p>
+        <p>🧪 <strong>Train Accuracy:</strong> <span class="code">96.63%</span></p>
     </div>
     <h2>📜 Confusion Matrix</h2>
     <p>Evaluating the classification performance:</p>
